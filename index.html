@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet the people behind Northwind Studio." />
+    <title>Northwind Studio — Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="page-head">
+      <div>
+        <p class="eyebrow">The people</p>
+        <h1>Meet the <em>team</em></h1>
+        <p class="lede">
+          A small, senior group of designers and engineers who care about the
+          details others skip.
+        </p>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filter team by department">
+        <button type="button" class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button type="button" class="filter" data-filter="design" role="tab" aria-selected="false">Design</button>
+        <button type="button" class="filter" data-filter="engineering" role="tab" aria-selected="false">Engineering</button>
+        <button type="button" class="filter" data-filter="product" role="tab" aria-selected="false">Product</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="team" id="team" aria-live="polite"></section>
+      <p class="empty" id="empty" hidden>No teammates in this department yet.</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
